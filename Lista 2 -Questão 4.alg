@@ -1,0 +1,83 @@
+Algoritmo "semnome"
+// Disciplina  :  [Linguagem e Lógica de Programação]
+// Professor   : Aldo Henrique
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Paulo Sérgio Martins
+// Data atual  : 11/03/2020
+//Ler três valores e um código de condição. Se o código for “c” os valores devem
+//ser escritos em ordem crescente. Se o código for “d”, deve-se escrevê-los emordem decrescente.
+
+Var
+   N1, N2, N3: real
+   ordem: caracter
+
+
+Inicio
+   escreva ("Digite o Primeiro Número: ")
+   leia (N1)
+   escreva ("Digite o segundo Número: ")
+   leia (N2)
+   escreva ("Digite o Terceiro Número: ")
+   leia (N3)
+   escreva("------------------------------------------------------------- ")
+   escreval ("Escolha a Ordem: Aperte a tecla C-(CRESCENTE) ou ")
+   escreval (" Aperte a tecla D-(DECRESCENTE): ")
+    escreva("------------------------------------------------------------- ")
+   leia(ordem)
+   SE (ordem = "c") ou (ordem = "C") entao
+      escreva ("Ordem Crescente.")
+      se (N1<N2) e (N2<N3) entao
+         escreva (N1, N2, N3)
+      senao
+         se (N1<N3) e (N3<N2) entao
+            escreva (N1, N3, N2)
+         senao
+            se (N2<N1) e (N1<N3) entao
+               escreva (N2, N1, N3)
+            senao
+               se (N2<N3) e (N3<N1) entao
+                  escreva (N2, N3, N1)
+               senao
+                  se (N3<N2) e (N2<N1) entao
+                     escreva (N3, N2, N1)
+                  senao
+                     se (N3<N1) e (N1<N2) entao
+                        escreva (N3, N1, N2)
+                     fimse
+                  fimse
+               fimse
+            fimse
+         fimse
+      fimse
+   fimse
+
+   SE (ORDEM = "D") ou (ordem = "d") entao
+      escreva ("ORDEM DECRESCENTE.")
+      se (N1>N2) e (N2>N3) entao
+         escreva (N1, N2, N3)
+      senao
+         se (N1>N3) e (N3>N2) entao
+            escreva (N1, N3, N2)
+         senao
+            se (N2>N1) e (N1>N3) entao
+               escreva (N2, N1, N3)
+            senao
+               se (N2>N3) e (N3>N1) entao
+                  escreva (N2, N3, N1)
+               senao
+                  se (N3>N2) e (N2>N1) entao
+                     escreva (N3, N2, N1)
+                  senao
+                     se (N3>N1) e (N1>N2) entao
+                        escreva (N3, N1, N2)
+                     FIMSE
+                  fimse
+               fimse
+            fimse
+         fimse
+      fimse
+   fimse
+
+
+
+Fimalgoritmo
